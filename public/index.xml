@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1 Blog Post</title>
+      <link>http://localhost:4321/post/2024/09/10/week-1-blog-post/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/post/2024/09/10/week-1-blog-post/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;As I am a week behind in the course due to accidentally attending German 181’s lecture and enrolling quite late in Gov 1347, this will be a much briefer and less interesting post than I hope to make in the future.&lt;/p&gt;&#xA;&lt;p&gt;The two questions that I’ll be examining are 1) How competitive are presidential elections in the United States? and 2) Which states vote blue/red and how consistently? Just skimming over the data sets and based on our years of personal experience, it is obvious that presidential elections are competitive.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>test</title>
       <link>http://localhost:4321/post/2020/12/01/test/</link>
