@@ -18,17 +18,17 @@ The two questions that I’ll be examining are 1) How competitive are presidenti
 
 Using ggplot and the notes from the laboratory session, we can visualize the two-party presidential popular vote over time using a lineplot. Note that moving forward, I will be modeling the democratic party in the Brat Green that Kamala Harris and her social media team have been abusing in their campaign this summer [^1]. It just felt right. More on that in my Extension Section (see below).
 
-![Line Plot](../../../images/week1/figure1.png)
+![Alt text](figure1.png)
 
 This line plot shows us very clearly that the presidential election has been growing tighter and tighter over the years, with Biden and the Democratic Party barely eking out a victory in 2020 with a 52.3% share of the popular vote. 
 
 Abstracting from this further, we can look at the win margins for each state for that year’s election. 
 
-![Line Plot](../../../images/week1/figure2.png)
+![Line Plot](figure2.png)
 
 Compare this year to that of 1984, when Ronald Reagan was running. This year was a landslide election, but based on the opacity of the states, it wasn’t as competitive as 2020. 
 
-![Line Plot](../../../images/week1/figure3.png)
+![Line Plot](figure3.png)
 
 My thinking is that the stakes felt much higher in 2020 after the 2016 election, especially given the news cycle beginning to radicalize voters. Obviously, I’d have to run a few more experiments to test this theory, but off the jump that is what I wonder. 
 
@@ -40,7 +40,7 @@ Finally, we wish to analyze which states vote blue/red and how consistently. It 
 
 (In this figure, I attempted to add state labels to the graphics and realized that it just makes it much harder to read. So here they are without them.) 
 
-![Line Plot](../../../images/week1/figure4.png)
+![Line Plot](figure4.png)
 
 It is apparent that post-1988 the West Coast and the NorthEast likes to vote Democrat, which does not come as a surprise. Florida, as always, is a swing state, as well as some of its neighboring states. 
 
