@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swing State on A minimal Hugo website</title>
-    <link>http://localhost:4321/categories/swing-state/</link>
+    <link>http://localhost:7868/categories/swing-state/</link>
     <description>Recent content in Swing State on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/categories/swing-state/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:7868/categories/swing-state/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 2 Blog Post: Swing State GDP and Voting</title>
-      <link>http://localhost:4321/post/2024/09/16/week-2-blog-post-swing-state-gdp-and-voting/</link>
+      <link>http://localhost:7868/post/2024/09/16/week-2-blog-post-swing-state-gdp-and-voting/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/2024/09/16/week-2-blog-post-swing-state-gdp-and-voting/</guid>
-      <description></description>
+      <guid>http://localhost:7868/post/2024/09/16/week-2-blog-post-swing-state-gdp-and-voting/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This blog entry analyzes if we can predict election outcomes using only the state of the economy. Specifically, I chose to look at swing states and their individual change in GDP in order to examine if we can predict their votes using their economies. This is of particular interest to me because in 2020 and 2022, I worked for a PAC that targeted swing states during the presidential and congressional elections. Many a day was spent knocking on doors, helping the elderly find their nearest voting station, and occasionally, getting chased away by slobbering dogs. The PAC – along with other reputable sources&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; – carved out these five swing states as having the greatest influence on election outcomes: Arizona, Georgia, Nevada, North Carolina, and Pennsylvania. The same continues to hold true as we enter the 60th quadrennial election&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

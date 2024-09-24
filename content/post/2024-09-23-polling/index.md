@@ -1,5 +1,5 @@
 ---
-title: Week 3 Polling
+title: "Week 3: Polling"
 author: Caroline Choi
 date: '2024-09-23'
 slug: polling

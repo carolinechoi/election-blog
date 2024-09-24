@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polling on A minimal Hugo website</title>
+    <link>http://localhost:7868/tags/polling/</link>
+    <description>Recent content in Polling on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:7868/tags/polling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 3: Polling</title>
+      <link>http://localhost:7868/post/2024/09/23/polling/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:7868/post/2024/09/23/polling/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;In this week’s blog post, we will attempt to explore how we can best use polls to prejudice election outcomes. To do this, we will first start by predicting the outcome of this year’s election using weekly poll averages. From there, an ensemble model will be made with weighted variables.&lt;/p&gt;&#xA;&lt;p&gt;As our favorite nepo baby Alexis de Tocqueville said on the 1832 US Presidential Election, “a thousand voices are heard at once, each expressing some social requirements.” Each election after has only gotten larger, with the voting population expanding and changing as immigrant and electoral laws do&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. However, it is not necessarily true that polls are representative of these thousand voices. Whenever humans are involved, there’s bound to be some human error…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
