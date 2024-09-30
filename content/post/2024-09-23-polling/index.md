@@ -40,7 +40,7 @@ We can use this regression to predict the two-party popular vote share outcome f
 
 Combining different predictions, we can construct a “meta-model” or “ensemble model” that is more accurate. I like using the term “ensemble model” because it reminds me of ensemble casts, which turns statistics and data science into a fun Wes Anderson movie set in Europe. 
 
-There are two ways to go about doing this: 1) unweighted and 2) weighted. An unweighted model would give equal credence to all variables. For example, PollyVote’s 2020 model used equally weighted polls, expectations, models, and naive forecasts[^3]. Ultimately, this means taking the average predictions from different models. As of August 21, 2020, they predicted that Joe Biden would gain 52.1% of the popular vote over Trump[^4]. In reality, Biden DID win with ​​51.3% of the popular vote. 
+There are two ways to go about doing this: 1) unweighted and 2) weighted. An unweighted model would give equal credence to all variables. For example, PollyVote’s 2020 model used equally weighted polls, expectations, models, and naive forecasts[^3]. Ultimately, this means taking the average predictions from different models. As of August 21, 2020, they predicted that Joe Biden would gain 52.1% of the popular vote over Trump[^4]. In reality, Biden DID win with 51.3% of the popular vote. 
 
 The dataset of fundamentals that I used while making these models includes: GDP, GDP quarterly growth, Real Disposable Personal Income (RDPI), RDPI quarterly growth, Consumer Price Index (CPI), unemployment rates, the SP500 and incumbency along the lines of GDP growth, CPI, SP500 index and unemployment.
 
@@ -60,7 +60,7 @@ Confusingly, sometimes an A+ poll will have a lower poll weight or lower numeric
 
 I ended up having to re-regularize the polling weight to be between 0 and 1 so that I could cleanly multiply them by their popular vote counts. 
 
-After fitting e-net regression on this, I tried to use it to predict a vote count for 2024. It was very difficult! Eventually the number I got was that Harris would win at 52.31% of the popular vote share, but (with more time) I would want to run it again.
+After fitting e-net regression on this, I tried to use it to predict a vote count for 2024. It was very difficult! Eventually the number I got was that Harris would win at ~49% of the popular vote share, but (with more time) I would want to run it again.
 
 [^1]: https://centerforpolitics.org/crystalball/the-transformation-of-the-american-electorate/ 
 [^2]: https://corporatefinanceinstitute.com/resources/data-science/elastic-net/#:~:text=What%20is%20Elastic%20Net%3F,the%20regularization%20of%20statistical%20models. 

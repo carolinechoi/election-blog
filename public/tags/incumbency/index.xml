@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incumbency on A minimal Hugo website</title>
+    <link>http://localhost:7868/tags/incumbency/</link>
+    <description>Recent content in Incumbency on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:7868/tags/incumbency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 4: Incumbency</title>
+      <link>http://localhost:7868/post/2024/09/30/week-4-incumbency/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:7868/post/2024/09/30/week-4-incumbency/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

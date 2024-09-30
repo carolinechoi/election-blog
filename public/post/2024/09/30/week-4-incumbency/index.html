@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7868&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 4: Incumbency | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Week 4: Incumbency</span></h1>
+<h2 class="author">Caroline Choi</h2>
+<h2 class="date">2024/09/30</h2>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>The main question I will be answering in this blog post is the question of how we should treat the incumbency advantage in our 2024 election forecasts.</p>
+<p>The incumbency advantage has been long documented in our history. For example, 8 out of 12 incumbent presidents have won re-election. As for the House of Representatives, about 90% of incumbents are re-elected on a bad year. If those were the odds for betting in Vegas, I would be booking my ticket there right now.</p>
+<p>According to Alfred Cuzan and his “Five Laws of Politics,”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> however, there are two things we should pay attention to when analyzing incumbency. One, the law of incumbent advantage, which states the obvious – incumbent parties and candidates tend to have an advantage in elections. Two, the law of shrinking support – regardless of their party, support for candidates tends to diminish over their time in office. This makes sense given that elected officials are scrutinized in public more often than their relatively unknown opposers. If there were to be a recession or a scandal during their term, running for re-election may be riskier than on paper.</p>
+<p>Another thing to consider when looking at incumbency is “pork barrel spending”. The President has the ability to direct agencies to reallocate federal aid to specific swing states or constituents, especially when there’s an election year coming up.</p>
+<h2 id="history-of-incumbency">History of Incumbency</h2>
+<p>To start, let’s look at some statistics. There have been 11 elections with at least one incumbent running. Of those, we had 7 incumbent victories. That’s 63.64% of presidential elections where the incumbent candidate wins.</p>
+<p>This year’s election is particularly interesting because Trump is an incumbent candidate (who has lost re-election before) and Harris is taking over for another incumbent candidate. Theoretically, Trump should do better than Harris, although he has had about the same amount (if not more) negative press than Harris due to his criminal trial. For this reason, I think the incumbency advantage doesn’t apply to Trump in this year’s election. I also don’t think Harris carries any kind of incumbent advantage because she was pretty irrelevant (and unfortunately the laughingstock of the internet) until she started running for president.</p>
+<h2 id="dont-look-a-gift-pig-in-the-mouth">Don’t Look A Gift Pig In The Mouth</h2>
+<p>Now, let’s analyze pork barrel spending by Presidents, specifically going into election years. Using a federal grants dataset from Kriner &amp; Reeves (2008), we can create a plot to show federal grant spending based on the type of state and year.</p>
+<p><img src="Rplot.png" alt="Plot"></p>
+<p>Based on this plot, we can see that presidents tend to allocate more federal grant funds to swing states on election years. Also (this is a mistake I made), while the green boxes look close in size, mind that we are plotting based on MILLIONS of dollars. 10 million makes quite a difference, although it doesn’t look like it on this graph.</p>
+<p>We can also analyze spending based on incumbent re-election years.</p>
+<p><img src="Rplot01.png" alt="Plot"></p>
+<p>This plot shows us that, once again, Presidents optimize for spending more on swing states on re-election years. Someone call PETA cuz that’s a lot of pork…</p>
+<p>We can get even nitty gritty and look at pork spending by county to explore the theory that pork spending depends on the competitiveness of the state. To do this, we create a model that looks at county data between 1988 and 2008. We take a look at the following variables: the % change in two-party vote-share for incumbent party since the last election, the % change in federal aid since the last election, whether the losing candidate averaged greater than 45% in the last 3 elections, and the election year.</p>
+<p>After running a linear model regression, we get an R^2 of 0.4. After adding in more variables around income, the Iraq war’s impact, ad airings, and county populations, our R^2 increases slightly to 0.42.</p>
+<p>We can then use this method to analyze pork spending by state. This gets us an R^2 of 0.27.</p>
+<h2 id="ratings">Ratings</h2>
+<p>We can compare the ratings from Cook’s Political Report<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and Sabato’s Crystal Ball<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to incorporate their expert predictions into our model. For 2020, we see that they differed on 9 ratings but agreed on 42 of them. These were Florida, Georgia, Iowa, Minnesota, New Hampshire, New Mexico, North Carolina, Ohio, and Texas. For all of these, however, the ratings differed by only 1 point.</p>
+<p>Using real data from the 2020 election, we can then examine which expert model was more accurate. Cook comes in at 88.24% and Sabato at 98.0%. Coming into 2024, both of these experts have the SAME set of swing states listed as toss-ups. Maybe we can start incorporating some of the pork barrel analysis…</p>
+<h2 id="ensembling">Ensembling</h2>
+<p>Using e-net regression, we can predict the two-party vote share for 2024 depending on how many weeks of polling we have left. We get 48.71% for Harris.</p>
+<p>We’ll then estimate our models using polls alone, fundamentals alone, and then combine them. With fundamentals alone, using e-net, we get 47.59%. Now combining them, we get 44.82%.</p>
+<p>Next, we’ll use the same methods as last week. First, we predict on an unweighted ensemble model between the polls and fundamentals, which gets us: 48.15%. Then, we’ll predict on Nate Silver’s weighted poll model: 48.56%. Finally, we’ll use the converse of Silver’s model, which is where fundamentals matter closer to November: 47.76%.</p>
+<h2 id="super-duper-learning">Super Duper Learning</h2>
+<p>We can use a super-learned model that uses three weighted models to look at the 2020 election. We take models for polling averages, the lagged vote, and combine them. Using those three, we predict winners for 15 states.
+Then, we can compare the real and predicted outputs of the 2020 election.</p>
+<p><img src="Rplot02.png" alt="Plot"></p>
+<p>For the 15 states we inspected, only one of them was off (Florida). Every other swing state was predicted accurately in terms of two party vote share.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://politicalsciencenow.com/five-laws-of-politics/">https://politicalsciencenow.com/five-laws-of-politics/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.cookpolitical.com/">https://www.cookpolitical.com/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://centerforpolitics.org/crystalball/2024-president/">https://centerforpolitics.org/crystalball/2024-president/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</main>
+
+  <footer>
+  </footer>
+  </body>
+</html>
+

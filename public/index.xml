@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:7868/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 4: Incumbency</title>
+      <link>http://localhost:7868/post/2024/09/30/week-4-incumbency/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:7868/post/2024/09/30/week-4-incumbency/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The main question I will be answering in this blog post is the question of how we should treat the incumbency advantage in our 2024 election forecasts.&lt;/p&gt;&#xA;&lt;p&gt;The incumbency advantage has been long documented in our history. For example, 8 out of 12 incumbent presidents have won re-election. As for the House of Representatives, about 90% of incumbents are re-elected on a bad year. If those were the odds for betting in Vegas, I would be booking my ticket there right now.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week 3: Polling</title>
       <link>http://localhost:7868/post/2024/09/23/polling/</link>
