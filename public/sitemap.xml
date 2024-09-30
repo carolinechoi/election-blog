@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:7868/</loc>
-    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
+    <loc>http://localhost:7868/categories/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7868/tags/polling/</loc>
-    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
+    <loc>http://localhost:7868/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:7868/tags/incumbency/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:7868/post/</loc>
-    <lastmod>2024-09-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:7868/categories/swing-state/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:7868/tags/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:7868/post/2024/09/30/week-4-incumbency/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:7868/tags/polling/</loc>
     <lastmod>2024-09-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:7868/post/2024/09/23/polling/</loc>
     <lastmod>2024-09-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7868/categories/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:7868/tags/gdp/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:7868/categories/swing-state/</loc>
     <lastmod>2024-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:7868/post/2024/09/16/week-2-blog-post-swing-state-gdp-and-voting/</loc>
