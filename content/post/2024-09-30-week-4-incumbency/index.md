@@ -23,7 +23,7 @@ Another thing to consider when looking at incumbency is “pork barrel spending�
 
 To start, let’s look at some statistics. There have been 11 elections with at least one incumbent running. Of those, we had 7 incumbent victories. That’s 63.64% of presidential elections where the incumbent candidate wins. 
 
-This year’s election is particularly interesting because Trump is an incumbent candidate (who has lost re-election before) and Harris is taking over for another incumbent candidate. Theoretically, Trump should do better than Harris, although he has had about the same amount (if not more) negative press than Harris due to his criminal trial. For this reason, I think the incumbency advantage doesn’t apply to Trump in this year’s election. I also don’t think Harris carries any kind of incumbent advantage because she was pretty irrelevant (and unfortunately the laughingstock of the internet) until she started running for president. 
+This year’s election is particularly interesting because Trump is an incumbent candidate (who has lost re-election before) and Harris is technically coming off of serving in the incumbent administration (as a vice president). Theoretically, Trump should do better than Harris, although he has had about the same amount (if not more) negative press than Harris due to his criminal trial. For this reason, I think the incumbency advantage doesn’t apply to Trump in this year’s election. I also don’t think Harris carries any kind of incumbent advantage because she was pretty irrelevant (and unfortunately the laughingstock of the internet) until she started running for president. She did inherit a lot of campaign infrastructure and donors, but undecided voters are still unsure exactly what policies she stands for[^2]. So overall, it feels like a toss-up, with Harris MAYBE having a little more of an advantage. 
 
 ## Don’t Look A Gift Pig In The Mouth 
 
@@ -47,7 +47,7 @@ We can then use this method to analyze pork spending by state. This gets us an R
 
 ## Ratings
 
-We can compare the ratings from Cook’s Political Report[^2] and Sabato’s Crystal Ball[^3] to incorporate their expert predictions into our model. For 2020, we see that they differed on 9 ratings but agreed on 42 of them. These were Florida, Georgia, Iowa, Minnesota, New Hampshire, New Mexico, North Carolina, Ohio, and Texas. For all of these, however, the ratings differed by only 1 point. 
+We can compare the ratings from Cook’s Political Report[^3] and Sabato’s Crystal Ball[^4] to incorporate their expert predictions into our model. For 2020, we see that they differed on 9 ratings but agreed on 42 of them. These were Florida, Georgia, Iowa, Minnesota, New Hampshire, New Mexico, North Carolina, Ohio, and Texas. For all of these, however, the ratings differed by only 1 point. 
 
 Using real data from the 2020 election, we can then examine which expert model was more accurate. Cook comes in at 88.24% and Sabato at 98.0%. Coming into 2024, both of these experts have the SAME set of swing states listed as toss-ups. Maybe we can start incorporating some of the pork barrel analysis… 
 
@@ -69,8 +69,9 @@ Then, we can compare the real and predicted outputs of the 2020 election.
 For the 15 states we inspected, only one of them was off (Florida). Every other swing state was predicted accurately in terms of two party vote share. 
 
 [^1]: https://politicalsciencenow.com/five-laws-of-politics/ 
-[^2]: https://www.cookpolitical.com/
-[^3]: https://centerforpolitics.org/crystalball/2024-president/ 
+[^2]: https://www.nytimes.com/2024/09/11/us/politics/undecided-voters-react-debate.html
+[^3]: https://www.cookpolitical.com/
+[^4]: https://centerforpolitics.org/crystalball/2024-president/ 
 
 
 

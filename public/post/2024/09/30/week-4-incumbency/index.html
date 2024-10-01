@@ -41,7 +41,7 @@
 <p>Another thing to consider when looking at incumbency is “pork barrel spending”. The President has the ability to direct agencies to reallocate federal aid to specific swing states or constituents, especially when there’s an election year coming up.</p>
 <h2 id="history-of-incumbency">History of Incumbency</h2>
 <p>To start, let’s look at some statistics. There have been 11 elections with at least one incumbent running. Of those, we had 7 incumbent victories. That’s 63.64% of presidential elections where the incumbent candidate wins.</p>
-<p>This year’s election is particularly interesting because Trump is an incumbent candidate (who has lost re-election before) and Harris is taking over for another incumbent candidate. Theoretically, Trump should do better than Harris, although he has had about the same amount (if not more) negative press than Harris due to his criminal trial. For this reason, I think the incumbency advantage doesn’t apply to Trump in this year’s election. I also don’t think Harris carries any kind of incumbent advantage because she was pretty irrelevant (and unfortunately the laughingstock of the internet) until she started running for president.</p>
+<p>This year’s election is particularly interesting because Trump is an incumbent candidate (who has lost re-election before) and Harris is technically coming off of serving in the incumbent administration (as a vice president). Theoretically, Trump should do better than Harris, although he has had about the same amount (if not more) negative press than Harris due to his criminal trial. For this reason, I think the incumbency advantage doesn’t apply to Trump in this year’s election. I also don’t think Harris carries any kind of incumbent advantage because she was pretty irrelevant (and unfortunately the laughingstock of the internet) until she started running for president. She did inherit a lot of campaign infrastructure and donors, but undecided voters are still unsure exactly what policies she stands for<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. So overall, it feels like a toss-up, with Harris MAYBE having a little more of an advantage.</p>
 <h2 id="dont-look-a-gift-pig-in-the-mouth">Don’t Look A Gift Pig In The Mouth</h2>
 <p>Now, let’s analyze pork barrel spending by Presidents, specifically going into election years. Using a federal grants dataset from Kriner &amp; Reeves (2008), we can create a plot to show federal grant spending based on the type of state and year.</p>
 <p><img src="Rplot.png" alt="Plot"></p>
@@ -53,7 +53,7 @@
 <p>After running a linear model regression, we get an R^2 of 0.4. After adding in more variables around income, the Iraq war’s impact, ad airings, and county populations, our R^2 increases slightly to 0.42.</p>
 <p>We can then use this method to analyze pork spending by state. This gets us an R^2 of 0.27.</p>
 <h2 id="ratings">Ratings</h2>
-<p>We can compare the ratings from Cook’s Political Report<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and Sabato’s Crystal Ball<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to incorporate their expert predictions into our model. For 2020, we see that they differed on 9 ratings but agreed on 42 of them. These were Florida, Georgia, Iowa, Minnesota, New Hampshire, New Mexico, North Carolina, Ohio, and Texas. For all of these, however, the ratings differed by only 1 point.</p>
+<p>We can compare the ratings from Cook’s Political Report<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and Sabato’s Crystal Ball<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> to incorporate their expert predictions into our model. For 2020, we see that they differed on 9 ratings but agreed on 42 of them. These were Florida, Georgia, Iowa, Minnesota, New Hampshire, New Mexico, North Carolina, Ohio, and Texas. For all of these, however, the ratings differed by only 1 point.</p>
 <p>Using real data from the 2020 election, we can then examine which expert model was more accurate. Cook comes in at 88.24% and Sabato at 98.0%. Coming into 2024, both of these experts have the SAME set of swing states listed as toss-ups. Maybe we can start incorporating some of the pork barrel analysis…</p>
 <h2 id="ensembling">Ensembling</h2>
 <p>Using e-net regression, we can predict the two-party vote share for 2024 depending on how many weeks of polling we have left. We get 48.71% for Harris.</p>
@@ -71,10 +71,13 @@ Then, we can compare the real and predicted outputs of the 2020 election.</p>
 <p><a href="https://politicalsciencenow.com/five-laws-of-politics/">https://politicalsciencenow.com/five-laws-of-politics/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://www.cookpolitical.com/">https://www.cookpolitical.com/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.nytimes.com/2024/09/11/us/politics/undecided-voters-react-debate.html">https://www.nytimes.com/2024/09/11/us/politics/undecided-voters-react-debate.html</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><a href="https://centerforpolitics.org/crystalball/2024-president/">https://centerforpolitics.org/crystalball/2024-president/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.cookpolitical.com/">https://www.cookpolitical.com/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://centerforpolitics.org/crystalball/2024-president/">https://centerforpolitics.org/crystalball/2024-president/</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
