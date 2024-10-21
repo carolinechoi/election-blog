@@ -24,7 +24,7 @@ To nail down specific features of the ground game, we can take a look at the dif
 
 In 2012, we saw that Obama built more field offices in swing states than Romney, perhaps leading to his victory. Our data shows a slight increase in turnout and the Democratic vote share in states with more field offices. 
 
-![Plot](01.jpg)
+![Plot](01.png)
 
 Using data from the 2012 and 2016 Democratic campaigns, we can plot the locations of field offices onto a map of Wisconsin counties to try and analyze any relation between their quantity and the win margin. 
 
@@ -40,7 +40,7 @@ Because of this, I doubt that the presence of field offices will make or break t
 
 Finally, before closing out this blog post, I do want to talk about this new-fangled thing I discovered called probabilistic models. A problem that we have been running into with our forecasting models has been that the bounds of Y sometimes exceed the true values of our variables. 
 
-![Plot](Rplot04.jpg)
+![Plot](Rplot04.png)
 
 In this hypothetical poll support graph of the different states, we see that there are no polls in some states (empty boxes), very high variance (see NV), negative slopes (see MS), or simply Y not being in the 0-100 range. This is the problem with linear regression. 
 
@@ -50,7 +50,7 @@ To do this, we estimate the parameters of a probabilistic model and obtain distr
 
 Here, we simulate the distribution of election results in Pennsylvania, using a general additive model (GAM) to impute the voting-eligible population in Pennsylvania for 2024 using historical numbers. 
 
-![Plot](Rplot08.jpg)
+![Plot](Rplot08.png)
 
 We can take the weighted average of linear and GAM predictions to land on our final prediction of the voting-eligible population that turns out in 2024 in Pennsylvania: 10,044,706. 
 
