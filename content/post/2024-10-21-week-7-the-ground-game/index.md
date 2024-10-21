@@ -34,7 +34,7 @@ This year, I attempted to collect data on the differences between Harris and Tru
 
 Outside of these field offices, however, it would be erroneous not to mention the numerous super PACs and outside organizations that are stumping at the same time. For example, America PAC, a super PAC affiliated with Elon Musk, is sending people door-to-door as well. It appears the Trump campaign is taking advantage of a FEC decision that allows campaigns and PACs to coordinate on canvassing operations[^7]. I suspect this has to do with the relatively low numbers of Trump field offices in the mentioned swing states. 
 
-Because of this, I doubt that the presence of field offices will make or break this election. 
+Because of this, I doubt that the presence of field offices will make or break this election because of the lack of ACCURATE data on this.
 
 ## Binomial Simulation
 
