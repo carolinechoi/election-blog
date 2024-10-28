@@ -21,7 +21,7 @@ The hurricane data is pretty bad. A lot of information is missing, particularly 
 
 We see that in 2008, Louisiana took a total property damage loss of \$818,607,500 and voted 40.54% to Democrats. Mississippi took a total property loss of \$19,390,000 and voted 43.36% to Democrats. Texas was \$5,825,100,000 and 44.06% respectively. This was Obama’s bid for presidency. There is clearly very little correlation between the two variables. 
 
-![Plot](REAL REAL.png)
+![Plot](REAL.png)
 
 Things are a little more clear cut in 2016, but there are only two datapoints that had non-NA entries. 
 
